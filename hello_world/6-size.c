@@ -9,7 +9,7 @@ int main(void)
 int integerType;
 float floatType;
 long int longintType
-long long int longlongType
+double longlongType
 char charType;
 
 printf("Size of char: %ld byte\(s\)\n", sizeof(charType));
