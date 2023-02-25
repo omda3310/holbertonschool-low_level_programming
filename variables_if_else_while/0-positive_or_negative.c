@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/** more headers goes there
+/**
 *main -  Display caracter
-* Return: result integer
-* betty style doc for function main goes there
+*Return: result integer
+*betty style doc for function main goes there
 */
 int main(void)
 {
