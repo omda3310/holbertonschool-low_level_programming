@@ -11,10 +11,10 @@ for (i = '0'; i <= '9'; ++i)
 {
 for (j = '1'; j <= '9'; ++j)
 {
-my_putchar(i);
-my_putchar(j);
-my_putchar(',');
-my_putchar(' ');
+putchar(i);
+putchar(j);
+putchar(',');
+putchar(' ');
 }
 }
 }
