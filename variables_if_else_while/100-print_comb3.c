@@ -15,6 +15,7 @@ putchar(i);
 putchar(j);
 putchar(',');
 putchar(' ');
+i++;
 }
 }
 return (0);
