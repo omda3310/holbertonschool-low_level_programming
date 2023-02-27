@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "main.h"
+#include<conio.h>
 /**
  * main - check the code
  * print_alphabet -  display alphabet
