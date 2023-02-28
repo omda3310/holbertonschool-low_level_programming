@@ -1,5 +1,4 @@
-#include<stdio.h>
-#include<conio.h>
+#include "main.h"
 /**
  * main - check the code
  * print_alphabet -  display alphabet
@@ -11,12 +10,7 @@ void print_alphabet(void)
 char alphabet;
 for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
-putchar(alphabet);
+_putchar(alphabet);
 }
-putchar('\n');
-}
-int main(void)
-{
-print_alphabet();
-return (0);
+_putchar('\n');
 }
