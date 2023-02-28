@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - check the code
- * print_alphabet -  display alphabet
+ * print_alphabet - display alphabet
  * @parameterx: void
  * Return: Always 0.
  */
