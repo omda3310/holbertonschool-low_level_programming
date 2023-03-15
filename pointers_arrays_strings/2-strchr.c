@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strchar - display string begins by char
+ * _strchr - display string begins by char
  * @s: string
  * @c: char
  * Return: string
