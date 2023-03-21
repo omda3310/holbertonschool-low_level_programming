@@ -23,7 +23,7 @@ char *_strstr(char *s, char *accept)
 			++n;
 		}
 		else
-			n = 0;
+			return (0);
 	}
 	return (0);
 }
