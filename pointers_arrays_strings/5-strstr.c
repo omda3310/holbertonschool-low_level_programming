@@ -26,5 +26,4 @@ char *_strstr(char *s, char *accept)
 			n = 0;
 		return (0);
 	}
-	return (0);
 }
