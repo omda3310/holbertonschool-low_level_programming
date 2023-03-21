@@ -10,7 +10,7 @@ char *_strstr(char *s, char *accept)
 	int i, n;
 	char *pt;
 
-	for (i = 0, n = 0; accept[i] != '\0'; i++)
+	for (i = 0, n = 0; accept[n] != '\0'; i++)
 	{
 		if (s[i] == accept[n])
 		{
