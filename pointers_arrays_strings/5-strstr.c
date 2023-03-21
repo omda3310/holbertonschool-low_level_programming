@@ -10,7 +10,7 @@ char *_strstr(char *s, char *accept)
 	int i, n;
 	char *pt;
 
-	if (*accept == '\0')
+	if (*accept == 0)
 	{
 		return (s);
 	}
