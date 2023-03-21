@@ -22,9 +22,6 @@ char *_strstr(char *s, char *accept)
 				return (pt);
 			++n;
 		}
-		else
-			n = 0;
-		return (NULL);
 	}
 	return (0);
 }
