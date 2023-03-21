@@ -10,6 +10,8 @@ char *_strstr(char *s, char *accept)
 	int i, n;
 	char *pt;
 
+	if (*accept == 0)
+		return (s);
 	for (i = 0, n = 0; accept[n] != '\0'; i++)
 	{
 		if (s[i] == accept[n])
