@@ -21,7 +21,7 @@ char *_strstr(char *haystack, char *needle)
 			++needle;
 			++haystack;
 		}
-		if (*needle + 1 == '\0')
+		if (*needle == '\0')
 		{
 			return (pt);
 		}
