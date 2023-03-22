@@ -5,29 +5,22 @@
  * @accept: string 2
  * Return: integer
  */
-char *_strstr(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	int i, n;
-	char *pt;
-
-	if (*accept == 0)
+	if (*needle == 0)
 	{
-		return (s);
+		return (haystack);
 	}
-	for (i = 0, n = 0; accept[n] != '\0'; i++)
+	for (; *haystack != '\0'; haystack++)
 	{
-		if (s[i] == accept[n])
+		while (*haystack == *needle && *needle + 1 != '\0')
 		{
-			if (n == 0)
-				pt = &s[i];
-			if (accept[n + 1] == '\0')
-				return (pt);
-			++n;
+			needle++;
+			haystack++;
 		}
-		else
+		if (*needle == '\0')
 		{
-			n = 0;
-			return (0);
+			return (haystack);
 		}
 	}
 	return (0);
