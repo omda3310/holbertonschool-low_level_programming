@@ -8,9 +8,9 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *h, *n, *pt = 0;
+
 	h = haystack;
 	n = needle;
-
 	if (*n == 0)
 	{
 		return (h);
