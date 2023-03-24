@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strstr - display length of occur
- * @s: string
- * @accept: string 2
+ * @haystack: string
+ * @needle: string 2
  * Return: integer
  */
 char *_strstr(char *haystack, char *needle)
@@ -16,7 +16,7 @@ char *_strstr(char *haystack, char *needle)
 	for (; *haystack != '\0'; haystack++)
 	{
 		pt = haystack;
-		while (*haystack == *needle && *needle + 1 != '\0')
+		while (*haystack == *needle && *(needle + 1) != '\0')
 		{
 			needle++;
 			haystack++;
