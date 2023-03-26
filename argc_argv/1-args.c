@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - print number of arguments
- * argc: number of argument
- * argv: pointer
+ * @argc: number of argument
+ * @argv: pointer
  * Return: return 0
  */
 int main(int argc, char *argv[])
@@ -14,7 +14,6 @@ int main(int argc, char *argv[])
 		i++;
 		argv++;
 	}
-
 	printf("%d\n", i);
 	return (0);
 }
