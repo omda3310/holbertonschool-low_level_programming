@@ -4,9 +4,6 @@
  * @i: variable1
  * @j: varianle2
  * Return: value
- * _sqrt_recursion - calculate square root
- * @n: integer
- * Return: value
  */
 int test(int i, int j)
 {
@@ -21,6 +18,11 @@ int test(int i, int j)
 	else
 		return (-1);
 }
+/**
+ *  _sqrt_recursion - calculate square root
+ * @n: integer
+ * Return: integer
+ */
 int _sqrt_recursion(int n)
 {
 	return (test(1, n));
