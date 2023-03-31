@@ -1,8 +1,8 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * print_dog -
- * @: structure of dog
+ * print_dog - print structure of dog
  * @d: dog
  *
  */
