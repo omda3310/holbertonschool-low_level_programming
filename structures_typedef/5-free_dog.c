@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * free_dog - free dog
- * @dog_t: struct dog
+ * @d: struct dog
  *
  *
  */
