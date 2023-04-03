@@ -4,7 +4,7 @@
  * int_index -  searches for an integer
  * @array: array of integer
  * @size: size of zrray
- * @cpm: function to compare two integers
+ * @cmp: function to compare two integers
  * Return: index
  */
 int int_index(int *array, int size, int (*cmp)(int))
