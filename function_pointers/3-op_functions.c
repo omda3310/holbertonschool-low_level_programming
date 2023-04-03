@@ -22,7 +22,7 @@ int op_sub(int a, int b)
 	return (a - b);
 }
 /**
- * op_sub - multiplication
+ * op_mul - multiplication
  * @a: variable1
  * @b: variable2
  * Return: multiplication
@@ -32,7 +32,7 @@ int op_mul(int a, int b)
 	return (a * b);
 }
 /**
- * op_sub - division
+ * op_div - division
  * @a: variable1
  * @b: variable2
  * Return: division
@@ -42,7 +42,7 @@ int op_div(int a, int b)
 	return (a / b);
 }
 /**
- * op_sub - a % b
+ * op_mod - a % b
  * @a: variable1
  * @b: variable2
  * Return: a % b
