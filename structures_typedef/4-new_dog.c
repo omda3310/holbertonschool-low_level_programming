@@ -28,13 +28,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(d);
 		return (NULL);
 	}
-	for (k = 0; d->name[k] != '\0'; k++)
+	for (k = 0; name[k] != '\0'; k++)
 	{
 		d->name[k] = name[k];
 	}
 	d->name[k] = '\0';
 	d->age = age;
-	for (k = 0; d->owner[k] != '\0'; k++)
+	for (k = 0; cowner[k] != '\0'; k++)
 	{
 		d->owner[k] = owner[k];
 	}
