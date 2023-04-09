@@ -1,9 +1,8 @@
-#include <stdio.h>
 #ifndef LISTS_H
 #define LISTS_H
 /**
  * struct list - singly linked list
- * @s: strig
+ * @str: strig
  * @len: length of string
  * @next: next node
  */
