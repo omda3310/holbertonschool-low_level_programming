@@ -1,32 +1,26 @@
 #include "main.h"
+#include <stdio.h>
+#include <ctype.h>
 /**
- * cap_string - to upper case
- * @c: variable
- * Return: string
- *
+ * cap_string - check the code
+ * @str : string.
+ * Return: Always 0.
  */
-char *cap_string(char *c)
+char *cap_string(char *str)
 {
-	int i = 0;
+	int i;
 
-	while (c[i] != '\0')
+	str[0] = toupper(str[0]);
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (i == 0)
+		if (str[i - 1] == ' ' || str[i - 1] == '\t' || str[i - 1] == '\n' ||
+			str[i - 1] == ',' || str[i - 1] == ';' || str[i - 1] == '.' ||
+			str[i - 1] == '!' || str[i - 1] == '?' || str[i - 1] == '"' ||
+			str[i - 1] == '(' || str[i - 1] == ')' || str[i - 1] == '{' ||
+			str[i - 1] == '}')
 		{
-			if (c[i] <= 'z' && c[i] >= 'a')
-			{
-				c[i] = c[i] - 32;
-			}
+			str[i] = toupper(str[i]);
 		}
-		if (c[i] == '.' || c[i] == ' ' || c[i] == '\n' || c[i] == '\t')
-		{
-			i++;
-			if (c[i] >= 'a' && c[i] <= 'z')
-			{
-				c[i] = c[i] - 32;
-			}
-		}
-		i++;
 	}
-	return (c);
+	return (str);
 }
