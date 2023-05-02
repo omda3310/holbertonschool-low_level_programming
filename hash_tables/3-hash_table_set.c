@@ -1,16 +1,53 @@
 #include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 #include "hash_tables.h"
+#include <string.h>
 /**
- * key_index - check the code
+ *hash_table_set - A function that sets a key value pair in the hash table.
+ * @ht: is the hash table you want to add or update the key/value to
  * @key: is the key
- * @size: is the size of the array of the hash table
- * Return: Always EXIT_SUCCESS.
+ * @value: is the value associated with the key
+ * Return: Always 0.
  */
-unsigned long int key_index(const unsigned char *key, unsigned long int size)
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int hash_value = hash_djb2(key);
+	unsigned long int index = 0;
 
-	return (hash_value % size);
+	hash_node_s *new_node = NULL, *temp_node = NULL;
+
+	if (!ht || !key || strlen(key) == 0)
+		return (0);
+	index = key_index((const unsigned char *)key, ht->size);
+	temp_node = ht->array[index];
+	while (temp_node != NULL)
+	{
+		if (strcmp(temp_node->key, key) == 0)
+		{
+			free(temp_node->value);
+			temp_node->value = strdup(value);
+			if (!temp_node->value)
+				return (0);
+			return (1);
+		}
+		temp_node = temp_node->next;
+	}
+	new_node = malloc(sizeof(hash_node_s));
+	if (!new_node)
+		return (0);
+	new_node->key = strdup(key);
+	if (!new_node->key)
+	{
+		free(new_node);
+		return (0);
+	}
+	new_node->value = strdup(value);
+	if (!new_node->value)
+	{
+		free(new_node->key);
+		free(new_node);
+		return (0);
+	}
+	new_node->next = ht->array[index];
+	ht->array[index] = new_node;
+	return (1);
 }
