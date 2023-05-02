@@ -1,23 +1,19 @@
 #include "main.h"
 /**
- * more_numbers - check the code
+ * print_most_numbers - check the code
  *
  * Return: Always 0.
  */
-void more_numbers(void)
+void print_most_numbers(void)
 {
-	int i, j;
+	int i;
 
-	for (j = 0; j < 10; j++)
+	for (i = 48; i <= 57; i++)
 	{
-		for (i = 0; i <= 14; i++)
+		if (i != 50 && i != 52)
 		{
-			if (i > 9)
-			{
-				_putchar((i / 10) + '0');
-			}
-			_putchar((i % 10) + '0');
+			_putchar(i);
 		}
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
