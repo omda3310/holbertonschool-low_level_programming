@@ -3,7 +3,7 @@
 #include "search_algos.h"
 
 /**
- * binary_search - searches for a value in an array of integers
+ * linear_search - searches for a value in an array of integers
  *                 using the Linear search algorithm
  * @array: array of integers
  * @size: size of array
